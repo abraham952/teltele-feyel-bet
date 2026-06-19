@@ -1,0 +1,8 @@
+{
+  "name": "Taltele Feyel Bet Menu Board",
+  "description": "A luxury, modern digital menu board and interactive QR menu for Taltele Feyel Bet (Taltale Lounge), specializing in premium Ethiopian goat cuisine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
