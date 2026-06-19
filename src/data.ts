@@ -1,6 +1,10 @@
 import { MenuItem, CategoryInfo } from './types';
 
+<<<<<<< HEAD
 export const HERO_IMAGE = '/src/assets/images/user_real_storefront_final_1781856959733.jpg';
+=======
+export const HERO_IMAGE = '/src/assets/images/lounge_hero_banner_1781852311577.jpg';
+>>>>>>> fe1514acee143291151b69f04ddad21590c29afc
 
 export const MENU_ITEMS: MenuItem[] = [
   // ===============================================

@@ -146,6 +146,7 @@ export default function MobileMenuView({ onSelectItem, lang, theme, onOpenReserv
     <div className="w-full pb-20">
       
       {/* Search & Banner Frame */}
+<<<<<<< HEAD
       <section className="relative h-96 w-full bg-cover bg-center overflow-hidden flex items-center justify-center pt-8 border-b border-[#D4AF37]/25"
         style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)), url('/src/assets/images/user_real_storefront_final_1781856959733.jpg')` }}
       >
@@ -173,6 +174,33 @@ export default function MobileMenuView({ onSelectItem, lang, theme, onOpenReserv
                 className="w-full bg-[#1A1A1A]/95 text-xs pl-11 pr-4 py-3 rounded-full border border-[#D4AF37]/35 text-white placeholder-gray-500 focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-all duration-300"
               />
             </div>
+=======
+      <section className="relative h-72 w-full bg-cover bg-center overflow-hidden flex items-center justify-center pt-8 border-b border-[#D4AF37]/25"
+        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, ${isLight ? '0.6' : '0.8'}), rgba(0, 0, 0, ${isLight ? '0.75' : '0.92'})), url('/src/assets/images/lounge_hero_banner_1781852311577.jpg')` }}
+      >
+        <div className="text-center px-4 max-w-2xl mx-auto z-10">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#D4AF37]/15 border border-[#D4AF37]/45 rounded-full text-xs text-[#D4AF37] font-semibold mb-3 tracking-widest uppercase">
+            <Sparkles className="w-3.5 h-3.5 text-[#D4AF37] animate-spin" /> Luxury Dining & Lounge Vibe
+          </div>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold tracking-wide text-white uppercase">
+            {t.exploreFlavors}
+          </h2>
+          <p className="text-xs text-gray-300 mt-2 tracking-wide font-sans max-w-md mx-auto leading-relaxed">
+            {t.tablesideSlogan}
+          </p>
+
+          {/* Search Box */}
+          <div className="mt-5 max-w-lg mx-auto relative">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[#D4AF37]" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder={t.searchPlaceholder}
+              id="search-input"
+              className="w-full bg-[#1A1A1A]/95 text-xs pl-11 pr-4 py-3.5 rounded-full border border-[#D4AF37]/35 text-white placeholder-gray-500 focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-all duration-300"
+            />
+>>>>>>> fe1514acee143291151b69f04ddad21590c29afc
           </div>
         </div>
       </section>

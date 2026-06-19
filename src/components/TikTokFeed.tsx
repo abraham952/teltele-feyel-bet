@@ -110,7 +110,11 @@ export default function TikTokFeed() {
             <div>
               {/* Fake Tik Tok Profile Header */}
               <div className="relative w-20 h-20 mx-auto rounded-full border-2 border-[#D4AF37] p-1 bg-black">
+<<<<<<< HEAD
                 <div className="w-full h-full rounded-full bg-cover bg-center" style={{ backgroundImage: `url('/src/assets/images/user_real_storefront_final_1781856959733.jpg')` }}></div>
+=======
+                <div className="w-full h-full rounded-full bg-cover bg-center" style={{ backgroundImage: `url('/src/assets/images/lounge_hero_banner_1781852311577.jpg')` }}></div>
+>>>>>>> fe1514acee143291151b69f04ddad21590c29afc
               </div>
               <h4 className="font-serif text-lg font-bold text-white mt-3">Taltale Lounge</h4>
               <p className="text-xs text-[#D4AF37] font-mono tracking-wider">@teltelefeyelbet</p>
