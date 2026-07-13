@@ -1,10 +1,11 @@
 import { MenuItem, CategoryInfo } from './types';
 
-<<<<<<< HEAD
-export const HERO_IMAGE = '/src/assets/images/user_real_storefront_final_1781856959733.jpg';
-=======
-export const HERO_IMAGE = '/src/assets/images/lounge_hero_banner_1781852311577.jpg';
->>>>>>> fe1514acee143291151b69f04ddad21590c29afc
+const HERO_IMAGE_URL = new URL('./assets/images/lounge_hero_banner_1781852311577.jpg', import.meta.url).href;
+const FEYEL_TIBS_IMAGE_URL = new URL('./assets/images/feyel_tibs_1781852326700.jpg', import.meta.url).href;
+const GOAT_SOUP_IMAGE_URL = new URL('./assets/images/goat_soup_1781852357576.jpg', import.meta.url).href;
+const FAMILY_FEAST_IMAGE_URL = new URL('./assets/images/family_feast_1781852341486.jpg', import.meta.url).href;
+
+export const HERO_IMAGE = HERO_IMAGE_URL;
 
 export const MENU_ITEMS: MenuItem[] = [
   // ===============================================
@@ -71,7 +72,7 @@ export const MENU_ITEMS: MenuItem[] = [
     descriptionOm: 'Feyel tibs beera aadaa, shunkurti fi dhandhama gaarii wajjin kan dhiyaatu.',
     price: 350,
     category: 'signature-goat',
-    image: '/src/assets/images/feyel_tibs_1781852326700.jpg',
+    image: FEYEL_TIBS_IMAGE_URL,
     isPopular: true,
     isChefChoice: true,
     isSpicy: true,
@@ -122,7 +123,7 @@ export const MENU_ITEMS: MenuItem[] = [
     descriptionOm: 'Foon re\'ee lafee wajjin affeelame qophaayu qullubbii fi jinjibila wajjin.',
     price: 380,
     category: 'signature-goat',
-    image: '/src/assets/images/goat_soup_1781852357576.jpg',
+    image: GOAT_SOUP_IMAGE_URL,
     isPopular: true,
     isChefChoice: false,
     isSpicy: false,
@@ -173,7 +174,7 @@ export const MENU_ITEMS: MenuItem[] = [
     descriptionOm: 'Makuu foon re\'ee hundaa: foon dheedhii, tibs, dulet fi marak affeelame tokkoon dhiyaatu.',
     price: 1350,
     category: 'signature-goat',
-    image: '/src/assets/images/family_feast_1781852341486.jpg',
+    image: FAMILY_FEAST_IMAGE_URL,
     isPopular: true,
     isChefChoice: true,
     isSpicy: true,
@@ -401,7 +402,7 @@ export const MENU_ITEMS: MenuItem[] = [
     descriptionOm: 'Lafee re\'ee affeelame qullubbii fi jinjibila wajjin kan dhiyaatu marak gaariidha.',
     price: 180,
     category: 'soups-starters',
-    image: '/src/assets/images/goat_soup_1781852357576.jpg',
+    image: GOAT_SOUP_IMAGE_URL,
     isPopular: true,
     isChefChoice: true,
     isGlutenFree: true,

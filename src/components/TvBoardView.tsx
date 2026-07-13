@@ -4,6 +4,9 @@ import { MENU_ITEMS, CATEGORIES } from '../data';
 import { Tv, Play, Pause, ChevronRight, ChevronLeft, Flame, Award, Star, Volume2, Sparkles, Clock } from 'lucide-react';
 import { TRANSLATIONS, Language } from '../translations';
 
+const FEYEL_TIBS_BG = new URL('../assets/images/feyel_tibs_1781852326700.jpg', import.meta.url).href;
+const FAMILY_FEAST_BG = new URL('../assets/images/family_feast_1781852341486.jpg', import.meta.url).href;
+
 interface TvBoardViewProps {
   lang: Language;
   theme: 'dark' | 'light';
@@ -409,7 +412,7 @@ export default function TvBoardView({ lang, theme }: TvBoardViewProps) {
             <div className="absolute inset-0 z-0 overflow-hidden rounded-2xl">
               <div 
                 className="w-full h-full bg-cover bg-center opacity-40 transform scale-102 transition-all duration-1000 rotate-0"
-                style={{ backgroundImage: `url(${promos[loungePromoIndex].code === 'FAM-FEAST' || promos[loungePromoIndex].code === 'CHEF-01' ? '/src/assets/images/feyel_tibs_1781852326700.jpg' : '/src/assets/images/family_feast_1781852341486.jpg'})` }}
+                style={{ backgroundImage: `url(${promos[loungePromoIndex].code === 'FAM-FEAST' || promos[loungePromoIndex].code === 'CHEF-01' ? FEYEL_TIBS_BG : FAMILY_FEAST_BG})` }}
               ></div>
               <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/85 to-[#0A0A0A]/40"></div>
             </div>

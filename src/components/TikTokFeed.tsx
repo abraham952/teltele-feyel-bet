@@ -30,6 +30,8 @@ export default function TikTokFeed() {
 
   const [newComment, setNewComment] = useState('');
   const [commentingOn, setCommentingOn] = useState<string | null>(null);
+  const profileAvatarImage = new URL('../assets/images/user_real_storefront_final_1781856959733.jpg', import.meta.url).href;
+  const familyFeastImage = new URL('../assets/images/family_feast_1781852341486.jpg', import.meta.url).href;
 
   const handleLike = (id: string) => {
     if (hasLiked[id]) {
@@ -75,14 +77,13 @@ export default function TikTokFeed() {
       author: '@teltelefeyelbet',
       views: '112.5K views',
       duration: '0:58',
-      image: '/src/assets/images/family_feast_1781852341486.jpg',
+      image: familyFeastImage,
       tag: 'EthiopianFoodie'
     }
   ];
 
   return (
     <section className="relative overflow-hidden w-full border-t border-[#D4AF37]/20 bg-[#070707] py-12 px-4 md:px-6 z-10">
-      
       {/* Decorative Gold & Red circular background highlights */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-80 h-80 rounded-full bg-[#C62828]/5 filter blur-[90px] pointer-events-none"></div>
       <div className="absolute top-1/3 right-10 w-96 h-96 rounded-full bg-[#D4AF37]/5 filter blur-[100px] pointer-events-none"></div>
@@ -110,11 +111,7 @@ export default function TikTokFeed() {
             <div>
               {/* Fake Tik Tok Profile Header */}
               <div className="relative w-20 h-20 mx-auto rounded-full border-2 border-[#D4AF37] p-1 bg-black">
-<<<<<<< HEAD
-                <div className="w-full h-full rounded-full bg-cover bg-center" style={{ backgroundImage: `url('/src/assets/images/user_real_storefront_final_1781856959733.jpg')` }}></div>
-=======
-                <div className="w-full h-full rounded-full bg-cover bg-center" style={{ backgroundImage: `url('/src/assets/images/lounge_hero_banner_1781852311577.jpg')` }}></div>
->>>>>>> fe1514acee143291151b69f04ddad21590c29afc
+                <div className="w-full h-full rounded-full bg-cover bg-center" style={{ backgroundImage: `url(${profileAvatarImage})` }}></div>
               </div>
               <h4 className="font-serif text-lg font-bold text-white mt-3">Taltale Lounge</h4>
               <p className="text-xs text-[#D4AF37] font-mono tracking-wider">@teltelefeyelbet</p>

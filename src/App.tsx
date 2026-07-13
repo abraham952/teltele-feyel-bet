@@ -38,6 +38,7 @@ export default function App() {
 
   const t = TRANSLATIONS[lang];
   const isLight = theme === 'light';
+  const storefrontPhoto = new URL('./assets/images/user_real_storefront_final_1781856959733.jpg', import.meta.url).href;
 
   return (
     <div className={`min-h-screen flex flex-col font-sans transition-all duration-300 ${
@@ -110,7 +111,6 @@ export default function App() {
               </div>
             </div>
 
-<<<<<<< HEAD
             {/* Real Storefront Facade & Micro Info Badges Container */}
             <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-5 w-full md:w-auto items-center">
               {/* Premium Storefront Framed Showcase card */}
@@ -121,7 +121,7 @@ export default function App() {
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                 
                 <img 
-                  src="/src/assets/images/user_real_storefront_final_1781856959733.jpg" 
+                  src={storefrontPhoto} 
                   alt="Taltele Lounge Storefront Facade" 
                   className="w-full h-44 object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 />
@@ -162,28 +162,6 @@ export default function App() {
                     {t.hajiCertified}
                   </p>
                 </div>
-=======
-            {/* Micro Info Badges Box */}
-            <div className="grid grid-cols-2 gap-3 w-full md:w-auto">
-              <div className={`border p-4 rounded-3xl text-center flex flex-col items-center justify-center min-w-[160px] shadow-lg ${
-                isLight ? 'bg-white border-[#D4AF37]/25' : 'bg-[#121212]/80 border-gray-800'
-              }`}>
-                <Star className="w-5 h-5 text-[#D4AF37] fill-current" />
-                <span className="text-xl font-bold font-mono mt-1">{t.reviewsCount.split(' ')[0]}</span>
-                <p className="text-[9px] text-gray-500 uppercase tracking-wider font-semibold font-mono">
-                  {t.reviewsCount.split(' ').slice(1).join(' ')}
-                </p>
-              </div>
-
-              <div className={`border p-4 rounded-3xl text-center flex flex-col items-center justify-center min-w-[160px] shadow-lg ${
-                isLight ? 'bg-white border-[#D4AF37]/25' : 'bg-[#121212]/80 border-gray-800'
-              }`}>
-                <Award className="w-5 h-5 text-red-500" />
-                <span className="text-xl font-bold font-mono mt-1">100%</span>
-                <p className="text-[9px] text-gray-500 uppercase tracking-wider font-semibold font-mono">
-                  {t.hajiCertified}
-                </p>
->>>>>>> fe1514acee143291151b69f04ddad21590c29afc
               </div>
             </div>
 
